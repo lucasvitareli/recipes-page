@@ -5,7 +5,8 @@ import {
     Subtitle,
     Title,
     CTAButton,
-    ChefImage
+    ChefImage,
+    HeroContentRight
 } from "./style";
 
 
@@ -17,11 +18,21 @@ function HeroSection() {
                     Discover delicious recipes...
                 </Title>
                 <Subtitle>
-                    ...and share them with your friends
+                    "Hi, i’m Thiago Navarro, and this is my kitchen — 
+                    a place to share simple, delicious recipes made with care."
                 </Subtitle>
-                <CTAButton>Get Started</CTAButton>
             </HeroContentLeft>
-            <ChefImage src="/assets/chef.png" alt="Chef" />
+            <ChefImage src="/public/images/hero/chef.png" alt="Chef" />
+            <HeroContentRight>
+                <Title>
+                    So much to cook, and even more to discover ...
+                </Title>
+                <Subtitle>
+                “Many of my favorite recipes are free — but members get exclusive tips and
+                behind-the-scenes content you won’t find anywhere else.”
+                </Subtitle>
+                <CTAButton>Join Now</CTAButton>
+            </HeroContentRight>
         </HeroContainer>
     );
 }

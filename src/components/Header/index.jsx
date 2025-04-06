@@ -5,7 +5,7 @@ import { HeaderContainer, Title, Nav, NavLink, Button } from './style';
 function Header() {
     return (
         <HeaderContainer>
-            <Title>Delicious Recipes</Title>
+            <Title>Chef Navarro</Title>
             <Nav>
                 <NavLink href="#">Home</NavLink>
                 <NavLink href="#">Recipes</NavLink>
