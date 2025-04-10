@@ -4,7 +4,7 @@ export const HeroContainer = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 40px;
+    padding: 0 40px;
     min-height: 60vh;
     background-color: ${({ theme }) => theme.colors.secondary};
     color: ${({ theme }) => theme.colors.textWhite};
@@ -46,7 +46,7 @@ export const Subtitle = styled.h2`
     font-family: ${({ theme }) => theme.fonts.base};
     font-size: 22px;
     font-style: italic;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 
     @media (max-width: 768px) {
         font-size: 18px;
@@ -82,12 +82,14 @@ export const CTAButton = styled.button`
     background-color: ${({ theme }) => theme.colors.primary};
     color: ${({ theme }) => theme.colors.textWhite};
     border-radius: 20px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-    padding: 12px 22px;
+    border: none;
+    padding: 8px 22px;
+    font-family: ${({ theme }) => theme.fonts.base};
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-left: 180px;
     
     &:hover {
         background-color: ${({ theme }) => theme.colors.hooverButton};
