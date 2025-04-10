@@ -22,7 +22,7 @@ function HeroSection() {
                     a place to share simple, delicious recipes made with care."
                 </Subtitle>
             </HeroContentLeft>
-            <ChefImage src="/public/images/hero/chef.png" alt="Chef" />
+            <ChefImage src="/images/hero/chef.png" alt="Chef" />
             <HeroContentRight>
                 <Title>
                     So much to cook, and even more to discover ...
