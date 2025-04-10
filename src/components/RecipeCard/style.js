@@ -7,6 +7,7 @@ export const CardCointainer = styled.div`
     width: 100%;
     max-width: 320px;
     display: block;
+    margin: 0 auto;
     align-items: center;
     gap: 12px;
     border-radius: 16px;

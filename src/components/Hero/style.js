@@ -5,10 +5,10 @@ export const HeroContainer = styled.section`
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
-    min-height: 60vh;
     background-color: ${({ theme }) => theme.colors.secondary};
     color: ${({ theme }) => theme.colors.textWhite};
     flex-wrap: wrap;
+    background: linear-gradient(to bottom, #D16321 85%, #fefefe);
 
     @media (max-width: 768px) {
         flex-direction: column;
@@ -21,11 +21,16 @@ export const HeroContentLeft = styled.div`
     display: block;
     padding: 0 20px;
     max-width: 600px;
+    
 
     @media (max-width: 768px) {
         padding: 0;
         max-width: 100%;
         text-align: center;
+
+        h1,h2 {
+            display:none;
+        }
     }
 `;
 
@@ -37,7 +42,7 @@ export const Title = styled.h1`
     text-align: left;
     
     @media (max-width: 768px) {
-        font-size: 42px;
+        font-size: 2rem;
         text-align: center;
     }
 `;
@@ -49,19 +54,19 @@ export const Subtitle = styled.h2`
     margin-bottom: 40px;
 
     @media (max-width: 768px) {
-        font-size: 18px;
+        font-size: 1rem;
         text-align: center;
+        margin-bottom: 20px;
     }
 `;
 
 export const ChefImage = styled.img`
 width: 100%;
-max-width: 600px;
+max-width: 500px;
 height: auto;
-margin-left: 20px;
 
 @media (max-width: 768px) {
-    margin: 20px auto 0;
+    margin: auto 0;
     max-width: 100%;
 }
 `;
@@ -71,6 +76,7 @@ flex: 1;
 display: block;
 padding: 0 20px;
 max-width: 600px;
+
 
 @media (max-width: 768px) {
     padding: 0;
@@ -97,6 +103,8 @@ export const CTAButton = styled.button`
 
     @media (max-width: 768px) {
         margin: 20px auto 0;
+        font-size: 1.2rem;
+
     }
 `
 

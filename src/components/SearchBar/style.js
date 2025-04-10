@@ -5,10 +5,15 @@ export const SearchBarContainer = styled.div`
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin: 20px 0;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 0 20px;
     margin: 0 120px
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+
+
 `
 
 export const Label = styled.label`
@@ -16,6 +21,10 @@ export const Label = styled.label`
     font-size: 1.8rem;
     font-weight: 600;
     color: ${({ theme }) => theme.colors.secondary};
+
+    @media (max-width: 768px) {
+        font-size: 1.2rem;
+    }
 `
 
 export const Input = styled.input`
@@ -28,6 +37,14 @@ export const Input = styled.input`
     border-radius: 10px;
     padding: 0 20px;
     color: ${({ theme }) => theme.colors.text};
+
+    @media (max-width: 768px) {
+    height: 30px;    
+    padding: 0 10px;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    }
 `
 
 export const Button = styled.button`
@@ -45,5 +62,12 @@ export const Button = styled.button`
     &:hover {
         background-color: ${({ theme }) => theme.colors.hooverButton};
         transition: all 0.3s ease-in-out;
+    }
+
+    @media (max-width: 768px){
+        height: 30px;
+        font-size: 1rem;
+        
+
     }
 `
