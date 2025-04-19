@@ -10,7 +10,7 @@ function Header() {
                 <NavLink href="#">Home</NavLink>
                 <NavLink href="#">Recipes</NavLink>
                 <NavLink href="#about">About</NavLink>
-                <NavLink href="#">Contact</NavLink>
+                <NavLink href="#contact">Contact</NavLink>
                 <Button>Sign-Up</Button>
             </Nav>
         </HeaderContainer>

@@ -8,7 +8,7 @@ export const HeroContainer = styled.section`
     background-color: ${({ theme }) => theme.colors.secondary};
     color: ${({ theme }) => theme.colors.textWhite};
     flex-wrap: wrap;
-    background: linear-gradient(to bottom, #D16321 85%, #fefefe);
+    background: linear-gradient(to bottom, #D16321 85%, #F1EAEA);
 
     @media (max-width: 768px) {
         flex-direction: column;

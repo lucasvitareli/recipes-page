@@ -26,7 +26,8 @@ const slideInFromLeft = keyframes`
 `;
 
 export const Container = styled.section`
-    padding: 0px;
+    padding: 20px 0px;
+    height: 100vh;
     max-width: 80%;
     margin: 0 auto;
     margin-bottom: 52px;

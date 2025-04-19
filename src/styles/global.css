@@ -10,7 +10,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #FEFEFE;
+    background-color: #F1EAEA;
     width: 100%;
 }
 
@@ -19,3 +19,6 @@ html {
     scroll-behavior: smooth;
 }
 
+.social-icons {
+    margin-top: 20px;
+}

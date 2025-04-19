@@ -1,18 +1,72 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-    padding: 0px;
+    padding: 20px 0px;
     max-width: 80%;
     margin: 0 auto;
+    margin-top: 52px;
     margin-bottom: 52px;
 `
 
 export const Content = styled.div`
     background-color: #F1EAEA;
     display: flex;
-    flex-direction: column;
     width: 100%;
-    padding: 20px 20px;
+    padding: 0 20px;
+    
+`
+
+// Left side of the contact page
+export const Socials = styled.div`
+    background: ${({ theme }) => theme.colors.primary};
+    height: 655px;
+    width: 40%;
+    color: ${({ theme }) => theme.colors.textBlack};
+`
+
+export const SocialsContent = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+`
+
+export const SocialsText = styled.div`
+    max-width: 350px;
+    line-height: 1.2;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: ${({ theme }) => theme.colors.textWhite};
+    
+    .highlight {
+        display: inline;
+        max-width: 800px;
+        color: ${({ theme }) => theme.colors.secondary};
+    }
+`
+
+export const SocialsIcons = styled.div`
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+`
+
+export const Icon = styled.a`
+    display: flex;
+    color: ${({ iconColor, theme }) => iconColor || theme.colors.secondary};
+    }
+`
+
+
+// Right side of the contact page
+export const ContactContent = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    max-width: 890px;
+    width: 100%;
 `
 
 export const Title = styled.h1`
@@ -27,7 +81,8 @@ export const Title = styled.h1`
 export const Form = styled.div`
     display: flex;
     flex-direction: column;
-    max-width: 30%;
+    max-width: 500px;
+    width: 100%;
     margin-top: 52px;
 
     label {
@@ -72,12 +127,4 @@ export const Button = styled.button`
         color: ${({ theme }) => theme.colors.primary};
     }
     `
-    
 
-export const Socials = styled.div`
-
-`
-
-export const Icons = styled.div`
-
-`
