@@ -6,6 +6,8 @@ import HeroSection from './components/Hero';
 import SearchBar from './components/SearchBar';
 import RecipeCard from './components/RecipeCard';
 import RecipeList from './components/RecipeList';
+import AboutMe from './components/About';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Header />
       <HeroSection />
       <RecipeList />
+      <AboutMe />
+      <Contact />
     </ThemeProvider>
   );
 }

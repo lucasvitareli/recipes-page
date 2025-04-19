@@ -57,13 +57,13 @@ export const Button = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 6px 12px;
+    padding: 6px 8px;
     border: none;
     border-radius: 22px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     background-color: ${ ({ theme }) => theme.colors.background};
     color: ${ ({ theme }) => theme.colors.text};
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: ${ ({ theme }) => theme.fonts.NavLink};
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;

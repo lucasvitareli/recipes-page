@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const ListContainer = styled.section`
-    padding: 60px 40px;
-    max-width: 100%;
+    padding: 60px 20px;
+    max-width: 80%;
+    margin: 0 auto;
 
     @media (max-width: 768px) {
     padding: 40px 20px;

@@ -9,7 +9,7 @@ function Header() {
             <Nav>
                 <NavLink href="#">Home</NavLink>
                 <NavLink href="#">Recipes</NavLink>
-                <NavLink href="#">About</NavLink>
+                <NavLink href="#about">About</NavLink>
                 <NavLink href="#">Contact</NavLink>
                 <Button>Sign-Up</Button>
             </Nav>
