@@ -4,11 +4,11 @@ import { HeaderContainer, Title, Nav, NavLink, Button } from './style';
 
 function Header() {
     return (
-        <HeaderContainer>
+        <HeaderContainer id='home'>
             <Title>Chef Navarro</Title>
             <Nav>
-                <NavLink href="#">Home</NavLink>
-                <NavLink href="#">Recipes</NavLink>
+                <NavLink href="#home">Home</NavLink>
+                <NavLink href="#recipes">Recipes</NavLink>
                 <NavLink href="#about">About</NavLink>
                 <NavLink href="#contact">Contact</NavLink>
                 <Button>Sign-Up</Button>

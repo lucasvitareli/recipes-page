@@ -39,14 +39,30 @@ const Contact = () => {
                 </Socials>
                 <ContactContent>
                     <Title> Contact </Title>
-                    <Form>
+                    <Form
+                        onSubmit={(e) => {
+                            e.preventDefault();
+                            const form = e.target;
+                            const name = form.name.value.trim();
+                            const email = form.email.value.trim();
+                            const message = form.message.value.trim();
+
+                            if (!name || !email || !message) {
+                                alert("All fields are required!");
+                                return;
+                            }
+
+                            // Handle form submission logic here
+                            alert("Thank you, your message was succesfuly sent!");
+                        }}
+                    >
                         <label htmlFor="name">Name <span>*</span></label>
-                        <input type="text" />
+                        <input type="text" id="name" name="name" />
                         <label htmlFor="email">Email <span>*</span></label>
-                        <input type="text" />
+                        <input type="text" id="email" name="email" />
                         <label htmlFor="message">Message <span>*</span></label>
-                        <textarea id="message"></textarea>
-                        <Button>SEND</Button>
+                        <textarea id="message" name="message"></textarea>
+                        <Button type="submit">SEND</Button>
                     </Form>
                 </ContactContent>
             </Content>

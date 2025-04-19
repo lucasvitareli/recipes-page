@@ -13,7 +13,7 @@ function RecipeList() {
 );
 
     return (
-        <ListContainer>
+        <ListContainer id="recipes">
             <SearchBar 
                 searchTerm={searchTerm}
                 setSearchTerm={setSearchTerm}

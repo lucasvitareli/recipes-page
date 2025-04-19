@@ -8,6 +8,7 @@ import RecipeCard from './components/RecipeCard';
 import RecipeList from './components/RecipeList';
 import AboutMe from './components/About';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <RecipeList />
       <AboutMe />
       <Contact />
+      <Footer />
     </ThemeProvider>
   );
 }

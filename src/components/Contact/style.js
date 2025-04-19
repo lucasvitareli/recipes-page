@@ -91,7 +91,7 @@ export const Form = styled.div`
     }
 
     span {
-    color: ${({ theme }) => theme.colors.secondary};
+        color: ${({ theme }) => theme.colors.secondary};
     }
 
     input {
@@ -105,6 +105,7 @@ export const Form = styled.div`
         padding: 10px;
         font-family: Roboto;
         font-size: 1rem;
+        resize: none; 
     }
 `
 
@@ -121,10 +122,10 @@ export const Button = styled.button`
     font-weight: 400;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    align-self: flex-end;
 
     &:hover {
-        background-color: ${({ theme }) => theme.colors.secondary};
-        color: ${({ theme }) => theme.colors.primary};
+        background-color: ${({ theme }) => theme.colors.hooverButton};
     }
     `
 
