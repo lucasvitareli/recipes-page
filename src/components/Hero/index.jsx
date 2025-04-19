@@ -31,7 +31,7 @@ function HeroSection() {
                 “Many of my favorite recipes are free — but members get exclusive tips and
                 behind-the-scenes content you won’t find anywhere else.”
                 </Subtitle>
-                <CTAButton>Join Now</CTAButton>
+                <CTAButton>SEE MORE</CTAButton>
             </HeroContentRight>
         </HeroContainer>
     );

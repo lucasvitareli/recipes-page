@@ -1,24 +1,16 @@
-import React from 'react'
-import Header from './components/Header'
+import { Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import theme from './styles/theme';
-import HeroSection from './components/Hero';
-import SearchBar from './components/SearchBar';
-import RecipeCard from './components/RecipeCard';
-import RecipeList from './components/RecipeList';
-import AboutMe from './components/About';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Home from './pages/Home';
+import RecipeDetails from "./pages/RecipeDetails";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Header />
-      <HeroSection />
-      <RecipeList />
-      <AboutMe />
-      <Contact />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/recipe/:id" element={<RecipeDetails />} />
+      </Routes>
     </ThemeProvider>
   );
 }
