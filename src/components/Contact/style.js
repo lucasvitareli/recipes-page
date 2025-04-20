@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-    padding: 20px 0px;
-    max-width: 80%;
+    padding: 20px;
+    max-width: 1280px;
+    width: 100%;
     margin: 0 auto;
     margin-top: 52px;
     margin-bottom: 52px;
@@ -11,17 +12,28 @@ export const Container = styled.section`
 export const Content = styled.div`
     background-color: #F1EAEA;
     display: flex;
+    flex-direction: row;
     width: 100%;
     padding: 0 20px;
     
+    @media (max-width: 768px) {
+        flex-direction: column;
+        padding:0;
+    }
 `
 
 // Left side of the contact page
 export const Socials = styled.div`
     background: ${({ theme }) => theme.colors.primary};
-    height: 655px;
+    height: auto;
     width: 40%;
     color: ${({ theme }) => theme.colors.textBlack};
+
+    @media (max-width: 768px) {
+        width: 100%;
+        height: auto;
+        padding: 40px 0;
+    }
 `
 
 export const SocialsContent = styled.div`
@@ -38,6 +50,7 @@ export const SocialsText = styled.div`
     font-size: 2.5rem;
     font-weight: bold;
     color: ${({ theme }) => theme.colors.textWhite};
+    text-align: center; 
     
     .highlight {
         display: inline;
@@ -64,18 +77,29 @@ export const Icon = styled.a`
 export const ContactContent = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
     max-width: 890px;
     width: 100%;
+
+    @media (max-width: 768px) {
+        align-items: center;
+        padding: 20px;
+    }
 `
 
 export const Title = styled.h1`
     font-size: 4.8rem;
     font-weight: bold;
     text-align: left;
-    max-width: 40%;
+    max-width: 90%;
     font-family: ${({ theme }) => theme.fonts.PopPins};
     color: ${({ theme }) => theme.colors.secondary};
+
+    @media (max-width: 768px) {
+        font-size: 3rem;
+        text-align: center;
+        max-width: 100%;
+    }
 `
 
 export const Form = styled.div`
@@ -114,12 +138,13 @@ export const Button = styled.button`
     background-color: ${({ theme }) => theme.colors.primary};
     color: ${({ theme }) => theme.colors.textWhite};
     margin-top: 20px;
-    padding: 8px;
-    width: 20%;
+    padding: 12px;
+    width: 100%;
+    max-width: 160px;
     border: none;
     border-radius: 16px;
-    font-size: 0.8rem;
-    font-weight: 400;
+    font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     align-self: flex-end;
@@ -127,5 +152,4 @@ export const Button = styled.button`
     &:hover {
         background-color: ${({ theme }) => theme.colors.hooverButton};
     }
-    `
-
+`

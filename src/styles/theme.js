@@ -7,7 +7,7 @@ export const theme = {
         textWhite: '#FFFFFF',
         text: '#000000',
 
-        hooverLink: '#F9A825',
+        hooverLink: '#fb7d58',
         hooverButton: '#000',
     },
     fonts: {
