@@ -7,6 +7,7 @@ import RecipeCard from '../components/RecipeCard';
 import AboutMe from '../components/About';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import Membership from '../components/Membership';
 
 function Home() {
     return (
@@ -14,6 +15,7 @@ function Home() {
             <Header />
             <HeroSection />
             <RecipeList />
+            <Membership />
             <AboutMe />
             <Contact />
             <Footer />

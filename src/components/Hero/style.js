@@ -98,7 +98,8 @@ export const CTAButton = styled.button`
     margin-left: 180px;
     
     &:hover {
-        background-color: ${({ theme }) => theme.colors.hooverButton};
+        background-color: ${({ theme }) => theme.colors.textWhite};
+        color: ${({ theme }) => theme.colors.secondary};
     }
 
     @media (max-width: 768px) {
