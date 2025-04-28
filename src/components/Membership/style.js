@@ -10,6 +10,7 @@ export const Container = styled.section`
     margin-top: 52px;
     margin-bottom: 52px;
     background-color: ${({ theme }) => theme.colors.secondary};
+    
     @media (max-width: 768px) {
         flex-direction: column;
         height: auto;

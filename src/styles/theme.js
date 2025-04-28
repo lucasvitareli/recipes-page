@@ -1,3 +1,5 @@
+import { WatchButton } from "../pages/Recipe/style";
+
 export const theme = {
     colors: {
         primary: '#0E3B24',
@@ -6,6 +8,7 @@ export const theme = {
         background: '#F1EAEA',
         textWhite: '#FFFFFF',
         text: '#000000',
+        watchButton: '#FF3131',
 
         hooverLink: '#fb7d58',
         hooverButton: '#000',

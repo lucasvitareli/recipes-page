@@ -1,4 +1,10 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
+
+export const StyledLink = styled(Link)`
+    text-decoration: none;
+    color: inherit;
+`
 
 export const CardCointainer = styled.div`
     background-color: ${({ theme }) => theme.colors.background};
@@ -46,6 +52,7 @@ export const Tag = styled.li`
     font-size: 0.8rem;
     border-radius: 20px;
     cursor: pointer;
+    list-style: none;
 
     &:hover{
         transform: translateY(-2px);
