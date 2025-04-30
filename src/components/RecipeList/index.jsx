@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { recipes } from "../../data/recipes"
+
 import RecipeCard from "../RecipeCard"
 import SearchBar from "../SearchBar";
 
 import { ListContainer, Grid } from "./style"
 
+/* This component is for filtering the recipes. 
+It will receive the recipes data from the data/recipes.js file and filter them based on the search term. */ 
 function RecipeList() {
     const [searchTerm, setSearchTerm] = useState("");
 
@@ -17,10 +20,9 @@ function RecipeList() {
             <SearchBar 
                 searchTerm={searchTerm}
                 setSearchTerm={setSearchTerm}
-                onSearch={() => {}}
-                />
-            
+                />            
             <Grid>
+                {/* Only filtered recipes will be displayed */}
                 {filteredRecipes.map((recipe => (
                     <RecipeCard key={recipe.id} recipe={recipe}  />
                 )))}

@@ -1,18 +1,21 @@
 import React from 'react';
 
-import { SearchBarContainer,
-        Label,
-        Input,
-        Button,
-    
-    } from './style';
+import {
+    SearchBarContainer,
+    Label,
+    Input,
+} from './style';
 
-function SearchBar() {
+function SearchBar({ searchTerm, setSearchTerm }) {
     return (
         <SearchBarContainer>
             <Label>Looking for anything specific?</Label>
-            <Input type="text" placeholder="Type here..." />
-            <Button type="submit">Search</Button>
+            <Input
+                type="text"
+                placeholder="Type here..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+            />
         </SearchBarContainer>
     );
 }

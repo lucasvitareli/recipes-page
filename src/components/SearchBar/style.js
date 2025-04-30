@@ -47,27 +47,3 @@ export const Input = styled.input`
     }
 `
 
-export const Button = styled.button`
-    height: 50px;
-    background: ${({ theme }) => theme.colors.secondary};
-    font-family: ${({ theme }) => theme.fonts.base};
-    font-size: 1.1rem;
-    font-weight: 600;
-    border: none;
-    border-radius: 12px;
-    padding: 0 20px;
-    color: ${({ theme }) => theme.colors.textWhite};
-    cursor: pointer;
-
-    &:hover {
-        background-color: ${({ theme }) => theme.colors.hooverButton};
-        transition: all 0.3s ease-in-out;
-    }
-
-    @media (max-width: 768px){
-        height: 30px;
-        font-size: 1rem;
-        
-
-    }
-`
