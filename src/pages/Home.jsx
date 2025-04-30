@@ -9,7 +9,22 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import Membership from '../components/Membership';
 
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
+
 function Home() {
+    // Get the current location from React Router
+    const location = useLocation();
+    // Scroll to the #recipes section if it's the current location
+    useEffect(() => {
+        if (location.hash === "#recipes") {
+            const recipesSection = document.querySelector("#recipes")
+            if (recipesSection) {
+                recipesSection.scrollIntoView({ behavior: "smooth" })
+            }
+        }
+    }, [location])
+
     return (
         <>
             <Header />
