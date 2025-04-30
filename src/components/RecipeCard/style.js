@@ -12,6 +12,8 @@ export const CardCointainer = styled.div`
     padding: 16px;
     width: 100%;
     max-width: 320px;
+    height: 100%; 
+    min-height: 420px; 
     display: block;
     margin: 0 auto;
     align-items: center;
