@@ -7,6 +7,10 @@ export const Container = styled.div`
     padding: 20px;
     font-family: ${({ theme }) => theme.fonts.base};
     background-color: ${({ theme }) => theme.colors.background};
+
+    @media (max-width: 768px) {
+        padding: 10px;
+    }
 `;
 
 export const Wrapper = styled.div`
@@ -14,6 +18,12 @@ export const Wrapper = styled.div`
     gap: 40px;
     flex-wrap: wrap;
     align-items: flex-start;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
 `
 
 export const BackLink = styled(Link)`
@@ -41,6 +51,11 @@ export const Image = styled.img`
     border: 1px solid ${({ theme }) => theme.colors.text};
     border-radius: 16px;
     margin-top: 40px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        max-height: 200px;
+    }
 `;
 
 // Top-Right (Recipe Information)
@@ -51,12 +66,20 @@ export const Details = styled.div`
     gap: 20px;
     align-items: center;
 
-    `
+    @media (max-width: 768px) {
+        align-items: center;
+    }
+`
 
 export const Title = styled.h1`
     font-size: 3.2rem;
     margin-bottom: 20px;
     font-family: ${({ theme }) => theme.fonts.title};
+
+    @media (max-width: 768px) {
+        font-size: 2.4rem;
+        text-align: center;
+    }
 `;
 
 export const Description = styled.p`
@@ -64,6 +87,10 @@ export const Description = styled.p`
     font-size: 1.2rem;
     color: ${({ theme }) => theme.colors.text};
     margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+        font-size: 1rem;
+    }
 `
 
 
@@ -74,6 +101,10 @@ export const Badges = styled.div`
     width: 100%;
     flex-wrap: wrap;
     margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+        justify-content: center;
+    }
 `;
 
 export const Badge = styled.span`
@@ -107,6 +138,11 @@ export const WatchButton = styled.button`
         border: 1px solid ${({ theme }) => theme.colors.watchButton};
     }
 
+    @media (max-width: 768px) {
+        width: 50%;
+        padding: 12px 20px;
+        font-size: 1.2rem;
+    }
 `
 
 // Bottom Content (Ingredients)
@@ -114,11 +150,20 @@ export const WatchButton = styled.button`
 export const BottomContent = styled.div`
     display: flex;
     margin-top: 60px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 20px;
+    }
 `
 
 export const Column = styled.div`
     flex: 1;
     min-width: 280px;
+
+    @media (max-width: 768px) {
+        min-width: 100%;
+    }
 `
 
 export const SectionTitle = styled.h2`
@@ -127,6 +172,10 @@ export const SectionTitle = styled.h2`
     color: ${({ theme }) => theme.colors.secondary};
     font-family: ${({ theme }) => theme.fonts.title};
     
+    @media (max-width: 768px) {
+        font-size: 2.5rem;
+        text-align: center;
+    }
 `;
 
 export const List = styled.ul`
@@ -135,11 +184,18 @@ export const List = styled.ul`
     font-size: 1.2rem;
     color: ${({ theme }) => theme.colors.text};
     line-height: 1.6;
-    align-items: ;
+    align-items: center; ;
 
     & li {
         margin-bottom: 8px;
     }
 
-`;
+    @media (max-width: 768px) {
+        list-style: ${(props) => (props.as === "ol" ? "decimal" : "none")};
+        font-size: 1rem;
+        text-align: center;
+        padding: 12px;
+        
+    }
+    `;
 
