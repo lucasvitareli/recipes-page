@@ -91,13 +91,12 @@ export const recipes = [
         ],
 
         instructions: [
-            "Season salmon fillets with salt and pepper.",
-            "Sear the salmon in a pan with olive oil until golden brown on both sides. Set aside.",
-            "In the same pan, add butter and sauté chopped onion and garlic until soft.",
-            "Add fresh spinach and cook until wilted.",
-            "Pour in heavy cream and stir in grated parmesan cheese. Simmer until slightly thickened.",
-            "Add lemon juice and return the salmon to the pan to warm through.",
-            "Serve the salmon topped with the creamy spinach sauce."
+            "Preheat the oven to 200°C (400°F).",
+            "Season the chicken with olive oil, salt, pepper, garlic, rosemary, and thyme.",
+            "Stuff the cavity with lemon halves and additional herbs if desired.",
+            "Place the chicken in a roasting pan with chopped carrots, potatoes, and onions around it.",
+            "Roast in the oven for about 1 hour, basting occasionally, until the chicken is golden and cooked through.",
+            "Let the chicken rest for 10 minutes before carving and serving."
         ]
     },
     {
@@ -122,6 +121,17 @@ export const recipes = [
             "Vanilla extract",
             "Salt",
             "Heavy cream"
+        ],
+
+        instructions: [
+            "Preheat the oven to 180°C (350°F) and grease a cake pan.",
+            "In a bowl, mix flour, baking powder, and salt.",
+            "In another bowl, cream together butter and sugar until light and fluffy.",
+            "Add eggs one at a time, then mix in vanilla extract.",
+            "Alternate adding the dry ingredients and milk to the wet mixture, mixing until smooth.",
+            "Fold in chopped strawberries.",
+            "Pour the batter into the prepared pan and bake for 30 minutes or until a toothpick comes out clean.",
+            "Let the cake cool before topping with whipped cream and fresh strawberries."
         ]
     },
     {
@@ -134,7 +144,15 @@ export const recipes = [
         prepTime: "10 min",
         cookTime: "5 min",
         serves: 2,
-        description: "A classic Caesar salad with crispy croutons, grilled chicken, and a creamy dressing."
+        description: "A classic Caesar salad with crispy croutons, grilled chicken, and a creamy dressing.",
+
+        instructions: [
+            "Grill the chicken until fully cooked and slice into strips.",
+            "Wash and chop the lettuce.",
+            "Prepare the dressing by blending egg, olive oil, garlic, lemon juice, and anchovies (optional).",
+            "Toss the lettuce with the dressing, croutons, and grated parmesan cheese.",
+            "Top with the grilled chicken and serve immediately."
+        ]
     },
     {
         id: 6,
@@ -146,7 +164,15 @@ export const recipes = [
         prepTime: "10 min",
         cookTime: "10 min",
         serves: 3,
-        description: "A quick and healthy shrimp stir fry with fresh vegetables and a savory sauce."
+        description: "A quick and healthy shrimp stir fry with fresh vegetables and a savory sauce.",
+
+        instructions: [
+            "Cook the rice according to package instructions and set aside.",
+            "Heat oil in a wok or large pan and sauté shrimp until pink. Remove and set aside.",
+            "Add chopped vegetables to the pan and stir-fry until tender-crisp.",
+            "Return the shrimp to the pan and add soy sauce. Stir to combine.",
+            "Serve the stir fry over the cooked rice."
+        ]
     },
     {
         id: 7,
@@ -158,7 +184,14 @@ export const recipes = [
         prepTime: "10 min",
         cookTime: "15 min",
         serves: 4,
-        description: "Delicious beef tacos with fresh toppings, perfect for a quick and satisfying meal."
+        description: "Delicious beef tacos with fresh toppings, perfect for a quick and satisfying meal.",
+
+        instructions: [
+            "Cook the ground beef in a pan until browned. Season with taco seasoning.",
+            "Warm the taco shells in the oven or on a skillet.",
+            "Fill the taco shells with the cooked beef, lettuce, chopped onion, and shredded cheese.",
+            "Serve with your favorite toppings like salsa or sour cream."
+        ]
     },
     {
         id: 8,
@@ -170,7 +203,15 @@ export const recipes = [
         prepTime: "15 min",
         cookTime: "25 min",
         serves: 6,
-        description: "A hearty and comforting vegetable soup, perfect for cold days or a light meal."
+        description: "A hearty and comforting vegetable soup, perfect for cold days or a light meal.",
+
+        instructions: [
+            "Chop all the vegetables into bite-sized pieces.",
+            "In a large pot, sauté onions and garlic in olive oil until fragrant.",
+            "Add the chopped vegetables and cook for a few minutes.",
+            "Pour in the broth and bring to a boil. Reduce heat and simmer until the vegetables are tender.",
+            "Season with salt and pepper to taste and serve hot."
+        ]
     },
     {
         id: 9,
@@ -182,7 +223,16 @@ export const recipes = [
         prepTime: "10 min",
         cookTime: "10 min",
         serves: 4,
-        description: "Fluffy blueberry pancakes with a hint of sweetness, perfect for breakfast or brunch."
+        description: "Fluffy blueberry pancakes with a hint of sweetness, perfect for breakfast or brunch.",
+
+        instructions: [
+            "In a bowl, mix flour, baking powder, and a pinch of salt.",
+            "In another bowl, whisk together milk, eggs, and honey.",
+            "Combine the wet and dry ingredients, then fold in blueberries.",
+            "Heat a non-stick skillet and pour batter to form pancakes.",
+            "Cook until bubbles form on the surface, then flip and cook until golden brown.",
+            "Serve with syrup and sliced bananas."
+        ]
     },
     {
         id: 10,
@@ -194,7 +244,16 @@ export const recipes = [
         prepTime: "30 min",
         cookTime: "1h",
         serves: 6,
-        description: "A rich and hearty lasagna bolognese, layered with cheese and a flavorful meat sauce."
+        description: "A rich and hearty lasagna bolognese, layered with cheese and a flavorful meat sauce.",
+
+        instructions: [
+            "Prepare the meat sauce by cooking minced beef with onions, garlic, and tomato sauce.",
+            "Make the béchamel sauce by whisking butter, flour, and milk until thickened.",
+            "Preheat the oven to 180°C (350°F).",
+            "Layer the lasagna in a baking dish: pasta sheets, meat sauce, béchamel, and cheese. Repeat.",
+            "Bake for 1 hour or until the top is golden and bubbly.",
+            "Let it rest for 10 minutes before serving."
+        ]
     },
     {
         id: 11,
@@ -206,7 +265,14 @@ export const recipes = [
         prepTime: "10 min",
         cookTime: "5 min",
         serves: 2,
-        description: "A refreshing Greek salad with fresh vegetables, feta cheese, and a tangy dressing."
+        description: "A refreshing Greek salad with fresh vegetables, feta cheese, and a tangy dressing.",
+
+        instructions: [
+            "Chop the tomatoes and cucumber into bite-sized pieces.",
+            "Combine the vegetables in a bowl with olives and crumbled feta cheese.",
+            "Drizzle with olive oil and a splash of red wine vinegar.",
+            "Season with salt, pepper, and oregano. Toss gently and serve."
+        ]
     },
     {
         id: 12,
@@ -218,6 +284,14 @@ export const recipes = [
         prepTime: "15 min",
         cookTime: "30 min",
         serves: 4,
-        description: "A flavorful chicken curry with a creamy coconut milk base and aromatic spices."
+        description: "A flavorful chicken curry with a creamy coconut milk base and aromatic spices.",
+
+        instructions: [
+            "Heat oil in a pan and sauté onions until golden.",
+            "Add chicken pieces and cook until browned.",
+            "Stir in curry powder and cook for 1 minute to release the aroma.",
+            "Pour in coconut milk and simmer until the chicken is cooked through.",
+            "Serve with rice or naan bread."
+        ]
     }
 ];

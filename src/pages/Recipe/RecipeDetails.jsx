@@ -1,7 +1,9 @@
 import React from "react";
+import { useState } from "react";
 // Import Link from react-router-dom
 import { useParams, Link } from "react-router-dom";
 import { recipes } from "../../data/recipes";
+import Modal from "../../components/Modal"
 
 import {
     Container,
@@ -32,6 +34,22 @@ function RecipeDetails() {
         return <p>Recipe not found</p>
     }
 
+    // Create a state variable to track if the user is a member or not, false by default
+    const [isMember, setIsMember] = useState(false);
+
+    const handleVideoAccess = () => {
+        // If the user is a member, set the state to true
+        if (isMember) {
+            alert("You are a member. Here is the video");
+        } else {
+            // If not a member
+            setShowModal(true)
+        }
+    };
+
+    // Create a state variable to track if the modal is open or not, false by default
+    const [showModal, setShowModal] = useState(false)
+
     return (
         <Container>
             <BackLink to="/#recipes">← Back to recipes</BackLink>
@@ -55,7 +73,7 @@ function RecipeDetails() {
                         <Badge>Cook: <span>{recipe.cookTime}</span> </Badge>
                     </Badges>
 
-                    <WatchButton>WATCH VIDEO</WatchButton>
+                    <WatchButton onClick={handleVideoAccess}>WATCH VIDEO</WatchButton>
                 </Details>
             </Wrapper>
 
@@ -80,16 +98,8 @@ function RecipeDetails() {
                 </Column>
             </BottomContent>
 
-
-
-            {/* <SectionTitle>Ingredients</SectionTitle>
-                <List>
-                    {recipe.ingredients.map((ing, i) => (
-                        <li key={i}>{ing}</li>
-                    ))}
-                </List> */}
-
-            {/* Adicione aqui uma seção de "Preparation steps" no futuro se quiser */}
+            {/* This a modal that appears when the user clicks on the "WATCH VIDEO" button. */}
+            {showModal && <Modal onClose={() => setShowModal(false)} />}
 
         </Container>
     );
