@@ -3,13 +3,17 @@
 Welcome to **Chef Navarro**, a personal recipe showcase web application built with **React**. This project simulates the website of a fictional Brazilian chef living in the U.S., aiming to share delicious recipes with an international audience.
 
 ## 📸 Preview
-
+## Desktop
 <p align="center">
-    <img src="./public/preview/preview 3.png" alt="Preview of the website" width="45%">
+    <img src="./public/preview/preview 1.png" alt="Preview of the website" width="800">
+    <img src="./public/preview/preview 2.png" alt="Preview of the website" width="800">
+</p>    
+    
+## Mobile
+<p>    
     <img src="./public/preview/preview 4.png" alt="Preview of the website" width="45%">
+    <img src="./public/preview/preview 3.png" alt="Preview of the website" width="45%">
 </p>
-    <img src="./public/preview/preview 1.png" alt="Preview of the website" width="400">
-    <img src="./public/preview/preview 2.png" alt="Preview of the website" width="400">
 
 ## 🌐 Live Demo
 
