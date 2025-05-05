@@ -6,7 +6,6 @@ import {
     NavLink,
     Burger,
     MobileMenu,
-    CloseIcon
 } from './style';
 
 function Header() {
@@ -20,7 +19,7 @@ function Header() {
                 ☰
             </Burger>
 
-            {/* Menu padrão - só desktop */}
+            {/* Default Menu - only desktop */}
             <Nav className="desktop-menu">
                 <NavLink href="#home">Home</NavLink>
                 <NavLink href="#recipes">Recipes</NavLink>
@@ -32,7 +31,6 @@ function Header() {
             {/* Menu Mobile (dropdown) */}
             {isOpen && (
                 <MobileMenu>
-                    <CloseIcon onClick={() => setIsOpen(false)}>x</CloseIcon>
                     <NavLink href="#home">Home</NavLink>
                     <NavLink href="#recipes">Recipes</NavLink>
                     <NavLink href="#membership">Membership</NavLink>

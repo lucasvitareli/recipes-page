@@ -178,7 +178,7 @@ export const SectionTitle = styled.h2`
     }
 `;
 
-export const List = styled.ul`
+export const Ingredients = styled.ul`
     list-style: ${(props) => (props.as === "ol" ? "decimal" : "disc")};
     padding-left: 20px;
     font-size: 1.2rem;
@@ -196,6 +196,26 @@ export const List = styled.ul`
         text-align: center;
         padding: 12px;
         
+    }
+    `;
+
+    export const Instructions = styled.ul`
+    list-style: ${(props) => (props.as === "ol" ? "decimal" : "disc")};
+    padding-left: 24px;
+    font-size: 1.2rem;
+    color: ${({ theme }) => theme.colors.text};
+    line-height: 1.6;
+    align-items: center; ;
+
+    & li {
+        margin-bottom: 8px;
+    }
+
+    @media (max-width: 768px) {
+        list-style: ${(props) => (props.as === "ol" ? "decimal" : "none")};
+        font-size: 1rem;
+        padding: 18px;
+        line-height: 1.8;
     }
     `;
 

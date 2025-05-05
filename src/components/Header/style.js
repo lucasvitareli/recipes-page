@@ -56,20 +56,6 @@ export const MobileMenu = styled.div`
 
 `
 
-export const CloseIcon = styled.div`
-    position: absolute;
-    top: 380px;
-    font-family: ${({ theme }) => theme.fonts.base};
-    font-size: 2rem;
-    font-weight: bold;
-    background-color: #fff;
-    opacity: 0.7;
-    width: 100%;
-    text-align: center;
-    color: ${({ theme }) => theme.colors.textBlack};
-    cursor: pointer;
-`
-
 export const Nav = styled.nav`
     display: flex;
     gap: 40px;

@@ -19,7 +19,8 @@ import {
     BottomContent,
     Column,
     SectionTitle,
-    List,
+    Ingredients,
+    Instructions,
     BackLink
 }
     from "./style";
@@ -81,20 +82,20 @@ function RecipeDetails() {
             <BottomContent>
                 <Column>
                     <SectionTitle>Ingredients</SectionTitle>
-                    <List>
+                    <Ingredients>
                         {recipe.ingredients.map((ing, i) => (
                             <li key={i}>{ing}</li>
                         ))}
-                    </List>
+                    </Ingredients>
                 </Column>
 
                 <Column>
                     <SectionTitle>Instructions</SectionTitle>
-                    <List as="ol">
+                    <Instructions as="ol">
                         {recipe.instructions.map((step, i) => (
                             <li key={i}>{step}</li>
                         ))}
-                    </List>
+                    </Instructions>
                 </Column>
             </BottomContent>
 
