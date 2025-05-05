@@ -94,6 +94,25 @@ npm install
 npm run start
 ```
 
+## 🚧 Future Improvements
+
+This project is still under development and will continue to evolve. Some of the planned features include:
+
+- A Member Sign-Up page for users to register and support the project
+- A dedicated video page for members to watch exclusive recipe tutorials
+- A Login system to manage member access
+- Contact form integration to receive real messages via email
+- More UI refinements and performance optimizations
+- Internationalization support for multilingual access
+- Possibly adding a blog or a comment section for community interaction
+
+## 💡 Feedback
+
+Your suggestions, feedback, or constructive criticism are always welcome!
+Feel free to open an issue or reach out directly.
+
+Thanks for visiting the project!
+
 ## 📄 License
 This project is for educational and portfolio purposes only.
 
